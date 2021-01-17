@@ -1,0 +1,116 @@
+.background {
+    background: url("img/accueil.png") no-repeat;
+    background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 160px);
+    grid-template-rows: repeat(9, 160px);
+    gap: 0px 0px;
+}
+
+body {
+    margin: 0;
+    /*overflow-y: hidden;*/
+    background-color: #EECFA1;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-barre {
+    position: absolute;
+    display: flex;
+    top: 0;
+    background-color: #312827;
+    height: 7%;
+    width: 100%;
+}
+
+nav a {
+    align-self: center;
+    text-decoration: none;
+    color: white;
+    padding-left: 5%; /* padding : Top, right, bottom, left */
+}
+
+a:hover{
+    color: gray;
+}
+
+em {
+    font-style: italic;
+}
+
+em:hover {
+    text-decoration: underline;
+}
+
+main a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Gestion de la grille */
+
+.haut_titre {
+    grid-area: 4 / 2 / 4 / 5; /* row start/ column start / row end / column end */
+    font-size: xxx-large;
+    color: white;
+}
+
+.haut_sous-titre {
+    grid-area: 5 / 2 / 5 / 5;
+    margin-top: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.milieu_titre {
+    grid-area: 6 / 2 / 6 / 4;
+    font-size: x-large;
+    color: white;
+}
+
+.milieu_sous-titre {
+    margin-top: 10%;
+    grid-area: 6 / 2 / 8 / 9;
+    font-size: large;
+    color: white;
+    text-align: justify;
+}
+
+strong {
+    font-weight: bold;
+    color: #FFCFA9;
+}
+
+/* tableau */
+table {
+    grid-area: 8 / 2 / 8 / 9;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    color: white;
+}
+
+th a {
+    text-decoration: underline;
+}
+
+.footer-text {
+    grid-area: 9 / 4 / 10 / 9;
+    padding-top: 50px;
+    color: white;
+}
+
+.footer-haut {
+    grid-area: 9 / 5 / 10 / 9;
+    padding-top: 70px;
+    padding-left: 60px;
+    color: white;
+}
