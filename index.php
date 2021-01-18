@@ -11,8 +11,8 @@
         <link rel="icon" type="image/ico" href="img/favicon.ico" />
         <script src="https://kit.fontawesome.com/4beb9db8c0.js" crossorigin="anonymous"></script>
     </head>
-    <body>
-        <div class="background">
+    <body class="background">
+        <div>
             <header>
                 <nav class="nav-barre" id="haut">
                     <a class="nav-barre-ele1" href="index.php"><i class="fas fa-home"></i> <em>ACCUEIL</em></a>
