@@ -39,6 +39,8 @@ $analyse = array(/* TOUTES les analyses de tous les profils :cry: */
     array('ENTJ', 'l\'entrepreneur', '1,80', 'https://fr.wikipedia.org/wiki/ENTJ'),
     array('INFJ', 'de conseiller', '1,50', 'https://fr.wikipedia.org/wiki/INFG'));
 
+/* Création des variables qui seront en paramètre des forms */
+$cas = 2; /* Par default en erreur */
 $nbQuestion = 0;
 $rep1 = "";
 $rep2 = "";
@@ -74,6 +76,9 @@ $lien = "";
                 </nav>
             </header>
             <main class="grid-container">
+                <?php
+                switch ($cas){
+                    case 0: /* On pose des questions */?>*
 
                 <div class="question formulaire">
                     <p>QUESTION</p>
@@ -89,20 +94,30 @@ $lien = "";
                     </form>
                 </div>
 
+                <?php
+                        break;
+                    case 1: /* On affiche les résultats */?>
+
                 <div class="resultat">
                     <p>Vous avez un profil "<?php echo $nom; ?>" ("<?php echo $profil; ?>"), comme <?php echo $pourcentage; ?>% de la population</p>
                     <br>
                     <a target=\"_blank\" href="<?php echo $lien; ?>" class='myButton vert'>En savoir plus</a>";
                 </div>
 
-                 <div class="erreur question formulaire">
-                     <p>Vous avez rafraîchi la page pendant le quiz.</p>
-                     <form action="test.php" method="post">
-                         <input type="hidden" name="detruireSession" value="true"/>
-                         <input class="myButton vert" type="submit" value="Recommencer">
-                     </form>
-                 </div>
+                <?php
+                        break;
+                    case 2: /* On a une erreur */ ?>
 
+                <div class="erreur question formulaire">
+                    <p>Vous avez rafraîchi la page pendant le quiz.</p>
+                    <form action="test.php" method="post">
+                        <input type="hidden" name="detruireSession" value="true"/>
+                        <input class="myButton vert" type="submit" value="Recommencer">
+                    </form>
+                </div>
+                <?php
+                }
+                ?>
             </main>
         </div>
     </body>
