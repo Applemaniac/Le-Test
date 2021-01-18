@@ -1,6 +1,5 @@
 <?php session_start();
 
-
 if (!isset($_SESSION['reponses'])){ /* On vérifie que la session existe sinon on la crée */
     $_SESSION['reponses'] = '';
 }
@@ -38,7 +37,20 @@ $analyse = array(/* TOUTES les analyses de tous les profils :cry: */
     array('ENFJ', 'd\'animateur', '2,50', 'https://fr.wikipedia.org/wiki/ENFJ'),
     array('INTJ', 'd\'organisateur', '2,10', 'https://fr.wikipedia.org/wiki/INTJ'),
     array('ENTJ', 'l\'entrepreneur', '1,80', 'https://fr.wikipedia.org/wiki/ENTJ'),
-    array('INFJ', 'de conseiller', '1,50', 'https://fr.wikipedia.org/wiki/INFG')); ?>
+    array('INFJ', 'de conseiller', '1,50', 'https://fr.wikipedia.org/wiki/INFG'));
+
+$nbQuestion = 0;
+$rep1 = "";
+$rep2 = "";
+$valeurRep1 = "";
+$valeurRep2 = "";
+$nom = "";
+$profil = "";
+$pourcentage = 0;
+$lien = "";
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -62,81 +74,35 @@ $analyse = array(/* TOUTES les analyses de tous les profils :cry: */
                 </nav>
             </header>
             <main class="grid-container">
-<?php if (isset($_POST['nbQuestion'])){ /* Si une question à déjà était posé */
-    if($_POST['nbQuestion'] < 4 && $_POST['nbQuestion'] > 0){ /* S'il reste encore des questions */
-        $_SESSION['reponses'] = $_SESSION['reponses'] . '' .$_POST['reponse'];
-?>              <div class="question formulaire"> <?php
-        echo '<p>' . $questions[intval($_POST['nbQuestion'])] . '</p>';
-        $nbReponse = intval($_POST['nbQuestion']);
-        $_POST['nbQuestion'] = intval($_POST['nbQuestion']) + 1;
-?>
-                <form action="test.php" method="post">
-                    <input type="hidden" name="nbQuestion" value=<?php echo $_POST['nbQuestion']; ?>/>
-                    <input type="hidden" name="reponse" value=<?php echo $reponses[$nbReponse][2]; ?>>
-                    <input class="myButton rouge" type="submit" value="<?php echo $reponses[$nbReponse][0];?>">
-                </form>
-                <form action="test.php" method="post">
-                    <input type="hidden" name="nbQuestion" value=<?php echo $_POST['nbQuestion']; ?>/>
-                    <input type="hidden" name="reponse" value=<?php echo  $reponses[$nbReponse][3]; ?>>
-                    <input class="myButton vert" type="submit" value="<?php echo $reponses[$nbReponse][1]; ?>">
-                </form>
-        </div>
-<?php }else{ /* Si c'était la dernière question */
 
-            $_SESSION['reponses'] = $_SESSION['reponses'] . '' .$_POST['reponse'];
-
-            $reponse = $_SESSION['reponses'];
-            $index = -1;
-
-            for ($i = 0; $i < count($analyse); $i++){
-                $var = $analyse[$i][0];
-                    if($reponse == $var){
-                        $index = $i;
-                    }
-            }
-
-            echo '</br>';
-
-            if ($index != -1){ /* Si tout va bien */ ?>
-         <div class="resultat">
-<?php
-                echo '<p>Vous avez ' . $analyse[$index][0] . ' comme profil, comme ' . $analyse[$index][1] . '% de la population</p>';
-                echo '</br>';
-                $lien = "<a target=\"_blank\" href=". $analyse[$index][2] . " class='myButton vert'>En savoir plus</a>";
-                echo $lien;
-?>
-         </div>
-<?php
-            }else{ ?>
-         <div class="erreur question formulaire">
-             <p>Vous avez rafraîchi la page pendant le quiz, ou vous êtes allé trop vite.</p>
-             <form action="test.php" method="post">
-                 <input type="hidden" name="detruireSession" value="true"/>
-                 <input class="myButton vert" type="submit" value="Recommencer">
-             </form>
-         </div>
-    <?php   }
-
-          }
-}else { /* Si on n'a pas encore posé de question */?>
-            <div class="question formulaire">
-<?php
-    echo '<p>'.$questions[0].'</p>';
-    $rep1 = $reponses[0][0];
-    $rep2 = $reponses[0][1];
-?>
+                <div class="question formulaire">
+                    <p>QUESTION</p>
                     <form action="test.php" method="post">
-                        <input type="hidden" name="nbQuestion" value=1/>
-                        <input type="hidden" name="reponse" value=<?php echo $reponses[0][2]; ?>>
-                        <input class="myButton rouge" type="submit" value="<?php echo $rep1;?>">
+                        <input type="hidden" name="nbQuestion" value=<?php echo $nbQuestion; ?>/>
+                        <input type="hidden" name="reponse" value="<?php echo $rep1; ?>">
+                        <input class="myButton rouge" type="submit" value="<?php echo $valeurRep1;?>">
                     </form>
                     <form action="test.php" method="post">
-                        <input type="hidden" name="nbQuestion" value=1/>
-                        <input type="hidden" name="reponse" value=<?php echo  $reponses[0][3]; ?>>
-                        <input class="myButton vert" type="submit" value="<?php echo $rep2; ?>">
+                        <input type="hidden" name="nbQuestion" value=<?php echo $nbQuestion; ?>/>
+                        <input type="hidden" name="reponse" value="<?php echo  $rep2; ?>">
+                        <input class="myButton vert" type="submit" value="<?php echo $valeurRep2; ?>">
                     </form>
                 </div>
-<?php } ?>
+
+                <div class="resultat">
+                    <p>Vous avez un profil "<?php echo $nom; ?>" ("<?php echo $profil; ?>"), comme <?php echo $pourcentage; ?>% de la population</p>
+                    <br>
+                    <a target=\"_blank\" href="<?php echo $lien; ?>" class='myButton vert'>En savoir plus</a>";
+                </div>
+
+                 <div class="erreur question formulaire">
+                     <p>Vous avez rafraîchi la page pendant le quiz.</p>
+                     <form action="test.php" method="post">
+                         <input type="hidden" name="detruireSession" value="true"/>
+                         <input class="myButton vert" type="submit" value="Recommencer">
+                     </form>
+                 </div>
+
             </main>
         </div>
     </body>
