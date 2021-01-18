@@ -1,11 +1,15 @@
 <?php session_start();
 
-if (!isset($_SESSION['reponses'])){ /* On vérifie que la session existe sinon on la crée */
-    $_SESSION['reponses'] = '';
-}
 if (isset($_POST['detruireSession'])){ /* si la variable est définie, on détruit la session */
     unset($_SESSION['reponses']);
 }
+if (!isset($_SESSION['reponses'])){ /* On vérifie que la session existe sinon on la crée */
+    $_SESSION['reponses'] = '';
+}
+if (!isset($_SESSION['nbQuestion'])){
+    $_SESSION['nbQuestion'] = 0;
+}
+
 
 $questions = array( /* Les questions */
     "Où puisez-vous votre énergie ?",
@@ -39,9 +43,21 @@ $analyse = array(/* TOUTES les analyses de tous les profils :cry: */
     array('ENTJ', 'l\'entrepreneur', '1,80', 'https://fr.wikipedia.org/wiki/ENTJ'),
     array('INFJ', 'de conseiller', '1,50', 'https://fr.wikipedia.org/wiki/INFG'));
 
+/* Debug */
+
+print_r("Session : ");
+print_r($_SESSION);
+print_r("Post :");
+print_r($_POST);
+
+/* Fin du debug */
+
+
 /* Création des variables qui seront en paramètre des forms */
+
 $cas = 2; /* Par default en erreur */
 $nbQuestion = 0;
+$question = "";
 $rep1 = "";
 $rep2 = "";
 $valeurRep1 = "";
@@ -51,6 +67,24 @@ $profil = "";
 $pourcentage = 0;
 $lien = "";
 
+/* Fin de la création des variables */
+
+if (!isset($_POST['nbQuestion'])){ /* Première question */
+    if ($_SESSION['nbQuestion'] == 0){
+        $cas = 0; /* On affiche les questions */
+        $question = $questions[0];
+        $rep1 = $reponses[0][0];
+        $valeurRep1 = $reponses[0][2];
+        $rep2 = $reponses[0][1];
+        $valeurRep2 = $reponses[0][3];
+        $nbQuestion = 1;
+        $_SESSION['nbQuestion'] = 1;
+    }
+} elseif ($_SESSION['nbQuestion'] < 4){
+    #TODO
+}else {
+    #TODO
+}
 
 ?>
 
@@ -81,16 +115,16 @@ $lien = "";
                     case 0: /* On pose des questions */?>*
 
                 <div class="question formulaire">
-                    <p>QUESTION</p>
+                    <p><?php echo $question; ?></p>
                     <form action="test.php" method="post">
                         <input type="hidden" name="nbQuestion" value=<?php echo $nbQuestion; ?>/>
-                        <input type="hidden" name="reponse" value="<?php echo $rep1; ?>">
-                        <input class="myButton rouge" type="submit" value="<?php echo $valeurRep1;?>">
+                        <input type="hidden" name="reponse" value="<?php echo $valeurRep1; ?>">
+                        <input class="myButton rouge" type="submit" value="<?php echo $rep1;?>">
                     </form>
                     <form action="test.php" method="post">
                         <input type="hidden" name="nbQuestion" value=<?php echo $nbQuestion; ?>/>
-                        <input type="hidden" name="reponse" value="<?php echo  $rep2; ?>">
-                        <input class="myButton vert" type="submit" value="<?php echo $valeurRep2; ?>">
+                        <input type="hidden" name="reponse" value="<?php echo  $valeurRep2; ?>">
+                        <input class="myButton vert" type="submit" value="<?php echo $rep2; ?>">
                     </form>
                 </div>
 
