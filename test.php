@@ -23,22 +23,22 @@ $reponses = array( /* Les reponses des 4 questions avec leurs valeurs */
 );
 
 $analyse = array(/* TOUTES les analyses de tous les profils :cry: */
-    array('ISFJ', '14,10', 'https://fr.wikipedia.org/wiki/ISFJ'),
-    array('ESFJ', '12,50', 'https://fr.wikipedia.org/wiki/ESFJ'),
-    array('ISTJ', '11,60', 'https://fr.wikipedia.org/wiki/ISTJ'),
-    array('ISFP', '8,80', 'https://fr.wikipedia.org/wiki/ISFP'),
-    array('ESTJ', '8,70', 'https://fr.wikipedia.org/wiki/ESTJ'),
-    array('ESFP', '8,50', 'https://fr.wikipedia.org/wiki/ESFP'),
-    array('ENFP', '8,10', 'https://fr.wikipedia.org/wiki/ENFP'),
-    array('ISTP', '5,40', 'https://fr.wikipedia.org/wiki/ISTP_(type_de_personnalit%C3%A9)'),
-    array('ESTP', '4,30', 'https://fr.wikipedia.org/wiki/ESTP'),
-    array('INFP', '3,60', 'https://fr.wikipedia.org/wiki/INFP'),
-    array('INTP', '3,30', 'https://fr.wikipedia.org/wiki/INTP'),
-    array('ENTP', '3,20', 'https://fr.wikipedia.org/wiki/ENTP'),
-    array('ENFJ', '2,50', 'https://fr.wikipedia.org/wiki/ENFJ'),
-    array('INTJ', '2,10', 'https://fr.wikipedia.org/wiki/INTJ'),
-    array('ENTJ', '1,80', 'https://fr.wikipedia.org/wiki/ENTJ'),
-    array('INFJ', '1,50', 'https://fr.wikipedia.org/wiki/INFG')); ?>
+    array('ISFJ', 'de protecteur ', '14,10', 'https://fr.wikipedia.org/wiki/ISFJ'),
+    array('ESFJ', 'de bon vivant', '12,50', 'https://fr.wikipedia.org/wiki/ESFJ'),
+    array('ISTJ', 'd\'administrateur', '11,60', 'https://fr.wikipedia.org/wiki/ISTJ'),
+    array('ISFP', 'd\'artiste ', '8,80', 'https://fr.wikipedia.org/wiki/ISFP'),
+    array('ESTJ', 'de manager ', '8,70', 'https://fr.wikipedia.org/wiki/ESTJ'),
+    array('ESFP', 'd\'acteur', '8,50', 'https://fr.wikipedia.org/wiki/ESFP'),
+    array('ENFP', 'de psychologue ', '8,10', 'https://fr.wikipedia.org/wiki/ENFP'),
+    array('ISTP', 'd\'artisan ', '5,40', 'https://fr.wikipedia.org/wiki/ISTP_(type_de_personnalit%C3%A9)'),
+    array('ESTP', 'de promoteur ', '4,30', 'https://fr.wikipedia.org/wiki/ESTP'),
+    array('INFP', 'd\'idéaliste  ', '3,60', 'https://fr.wikipedia.org/wiki/INFP'),
+    array('INTP', 'de chercheur ', '3,30', 'https://fr.wikipedia.org/wiki/INTP'),
+    array('ENTP', 'd\'inventeur', '3,20', 'https://fr.wikipedia.org/wiki/ENTP'),
+    array('ENFJ', 'd\'animateur', '2,50', 'https://fr.wikipedia.org/wiki/ENFJ'),
+    array('INTJ', 'd\'organisateur', '2,10', 'https://fr.wikipedia.org/wiki/INTJ'),
+    array('ENTJ', 'l\'entrepreneur', '1,80', 'https://fr.wikipedia.org/wiki/ENTJ'),
+    array('INFJ', 'de conseiller', '1,50', 'https://fr.wikipedia.org/wiki/INFG')); ?>
 
 <!DOCTYPE html>
 <html lang="fr">
