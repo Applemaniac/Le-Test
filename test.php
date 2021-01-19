@@ -69,7 +69,7 @@ $nom = "";
 $profil = "";
 $pourcentage = 0;
 $lien = "";
-
+$description = "";
 /* Fin de la création des variables */
 
 if (!isset($_POST['nbQuestion'])){ /* Première question */
@@ -122,6 +122,7 @@ if (!isset($_POST['nbQuestion'])){ /* Première question */
             $nom = $analyse[$index][1];
             $pourcentage = $analyse[$index][2];
             $lien = $analyse[$index][3];
+            $description = $analyse[$index][4];
         }
 
     }
@@ -175,6 +176,7 @@ if (!isset($_POST['nbQuestion'])){ /* Première question */
 
                 <div class="resultat">
                     <p class="titre">Vous avez un profil "<?php echo $nom; ?>" (<?php echo $profil; ?>), comme <?php echo $pourcentage; ?>% de la population</p>
+                    <p class="description"><?php echo $description; ?></p>
                     <br>
                     <br>
                     <a target=\"_blank\" href="<?php echo $lien; ?>" class='myButton vert'>En savoir plus</a>

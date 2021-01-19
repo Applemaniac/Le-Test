@@ -68,13 +68,15 @@ em:hover {
     font-size: xx-large;
 }
 
+.description {
+    font-size: large;
+    text-align: justify;
+}
+
 .text {
     font-size: large;
 }
 
-.test {
-
-}
 
 /* LES 2 boutons */
 
