@@ -146,12 +146,7 @@ if (!isset($_POST['nbQuestion'])){ /* Première question */
     </head>
     <body>
         <div class="background">
-            <header>
-                <nav class="nav-barre">
-                    <a class="nav-barre-ele1" href="index.php"><i class="fas fa-home"></i> <em>ACCUEIL</em></a>
-                    <a class="nav-barre-ele2" href="test.php"><i class="fas fa-clipboard-list"></i> <em>LE TEST</em></a>
-                </nav>
-            </header>
+            <?php include('./includes/navbar.html'); ?>
             <main class="grid-container">
                 <?php
                 switch ($cas){

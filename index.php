@@ -12,13 +12,8 @@
         <script src="https://kit.fontawesome.com/4beb9db8c0.js" crossorigin="anonymous"></script>
     </head>
     <body class="background">
-        <div>
-            <header>
-                <nav class="nav-barre" id="haut">
-                    <a class="nav-barre-ele1" href="index.php"><i class="fas fa-home"></i> <em>ACCUEIL</em></a>
-                    <a class="nav-barre-ele2" href="test.php"><i class="fas fa-clipboard-list"></i> <em>LE TEST</em></a>
-                </nav>
-            </header>
+        <div id="haut">
+            <?php include('./includes/navbar.html'); ?>
             <main class="grid-container">
                 <div class="haut_titre">
                     <p>QUI ÊTES VOUS VRAIMENT ?</p>
