@@ -83,6 +83,7 @@ if (!isset($_POST['nbQuestion'])){ /* Première question */
 } elseif (intval($_POST['nbQuestion']) < 4){
     if ($_SESSION['nbQuestion'] == $_POST['nbQuestion']){
         $cas = 0; /* On affiche les questions */
+        $_SESSION['reponses'] = $_SESSION['reponses'] . "" . $_POST['reponse'];
         $index = intval($_POST['nbQuestion']);
         $question = $questions[$index];
         $rep1 = $reponses[$index][0];
