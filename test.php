@@ -1,9 +1,12 @@
 <?php session_start();
 
 if (isset($_POST['detruireSession'])){ /* si la variable est définie, on détruit la session */
-    unset($_SESSION);
+    session_unset();
+    unset($_POST['detruireSession']);
 }
 if (!isset($_SESSION['reponses'])){ /* On vérifie que la session existe sinon on la crée */
+    $_SESSION['reponses'] = '';
+}elseif (strlen($_SESSION['reponses']) > 3){
     $_SESSION['reponses'] = '';
 }
 if (!isset($_SESSION['nbQuestion'])){
@@ -42,6 +45,15 @@ $analyse = array(/* TOUTES les analyses de tous les profils :cry: */
     array('INTJ', 'd\'organisateur', '2,10', 'https://fr.wikipedia.org/wiki/INTJ', 'Vous êtes stratégique, penseur et efficace, il faut aller à l’essentiel ! Vous, êtes plutôt introverti et  agissez de manière inconsciente, grâce à une idée de génie ! Votre grande capacité de mémorisation est un atout, vous voulez améliorer, perfectionner, trouver des solutions, inutile de perdre son temps pour des futilités. Vous êtes souvent persuadés que vous avez raison, mais attention à ne pas passer à côté d’autres idées. Vous n’allez pas forcément vers les autres, mais vous pouvez être naïf et sensible, il faut trouver un juste équilibre afin de ne pas perdre pied. L’INTJ ne se laisse pas approché facilement mais une fois cette étape franchie, vous aurez une place importante à ses yeux. '),
     array('ENTJ', 'l\'entrepreneur', '1,80', 'https://fr.wikipedia.org/wiki/ENTJ', 'Vous savez vous montrez très persuasif, autoritaire, vous aimez diriger, vous pensez pour agir ! Charismatique, vous aimez vous surpasser et vous êtes un grand bosseur ! Votre impatience peut vous empêcher d’avoir des idées innovantes et votre intuition introvertie peut être mise à rude épreuve. Il est important de prendre soin de vous, vous devez accorder davantage d’importance à vos valeurs et vos sentiments, il ne faut pas les négliger !'),
     /* Description pas faite */array('INFJ', 'de conseiller', '1,50', 'https://fr.wikipedia.org/wiki/INFG', ''));
+
+/* Debug */
+
+print_r("Session : ");
+print_r($_SESSION);
+print_r("Post :");
+print_r($_POST);
+
+/* Fin du debug */
 
 
 /* Création des variables qui seront en paramètre des forms */
@@ -89,7 +101,7 @@ if (!isset($_POST['nbQuestion'])){ /* Première question */
         $cas = 1; /* On affiche le résultat */
         $_SESSION['reponses'] = $_SESSION['reponses'] . "" . $_POST['reponse'];
         $profil = $_SESSION['reponses'];
-        unset($_SESSION); /* On détruit les variables de session */
+        session_unset(); /* On détruit les variables de session */
         session_destroy(); /* On ferme la session */
 
         $index = -1;
