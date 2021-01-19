@@ -1,7 +1,7 @@
 <?php session_start();
 
 if (isset($_POST['detruireSession'])){ /* si la variable est définie, on détruit la session */
-    unset($_SESSION['reponses']);
+    unset($_SESSION);
 }
 if (!isset($_SESSION['reponses'])){ /* On vérifie que la session existe sinon on la crée */
     $_SESSION['reponses'] = '';
@@ -80,10 +80,47 @@ if (!isset($_POST['nbQuestion'])){ /* Première question */
         $nbQuestion = 1;
         $_SESSION['nbQuestion'] = 1;
     }
-} elseif ($_SESSION['nbQuestion'] < 4){
-    #TODO
+} elseif (intval($_POST['nbQuestion']) < 4){
+    if ($_SESSION['nbQuestion'] == $_POST['nbQuestion']){
+        $cas = 0; /* On affiche les questions */
+        $index = intval($_POST['nbQuestion']);
+        $question = $questions[$index];
+        $rep1 = $reponses[$index][0];
+        $valeurRep1 = $reponses[$index][2];
+        $rep2 = $reponses[$index][1];
+        $valeurRep2 = $reponses[$index][3];
+        $nbQuestion = intval($_POST['nbQuestion']) + 1;
+        $_SESSION['nbQuestion'] = intval($_SESSION['nbQuestion']) + 1;
+    }
 }else {
-    #TODO
+    if ($_SESSION['nbQuestion'] == $_POST['nbQuestion']){
+        $cas = 1; /* On affiche le résultat */
+        $_SESSION['reponses'] = $_SESSION['reponses'] . "" . $_POST['reponse'];
+        $profil = $_SESSION['reponses'];
+        unset($_SESSION); /* On détruit les variables de session */
+        session_destroy(); /* On ferme la session */
+
+        $index = -1;
+
+        for ($i = 0; $i < count($analyse); $i++){ /* On parcourt le tableau pour trouver l'index du profil */
+            if ($profil == $analyse[$i][0]){
+                $index = $i;
+            }
+        }
+
+        if ($index == -1){ /* S'il y a une erreur */
+            /* $nom, $profil, $pourcentage, $lien */
+            $nom = "ERREUR";
+            $pourcentage = 0;
+            $lien = "https://google.ru";
+
+        }else { /* Sinon */
+            $nom = $analyse[$index][1];
+            $pourcentage = $analyse[$index][2];
+            $lien = $analyse[$index][3];
+        }
+
+    }
 }
 
 ?>
