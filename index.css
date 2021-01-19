@@ -160,9 +160,11 @@ th a {
         color: white;
         text-align: justify;
     }
+
     .tab {
         display: none; /* Le tableau n'est pas pratique d'utilisation ! */
     }
+
     .footer-text {
         grid-area: 9 / 1 / 9 / 7;
         padding-top: 50px;
@@ -177,6 +179,61 @@ th a {
         color: white;
         text-align: center;
     }
+}
 
+@media screen and (min-width: 426px) and (max-width: 1024px) { /* Taille tablettes et petits écrans */
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(6, 160px);
+        grid-template-rows: repeat(12, 160px);
+        gap: 0 0;
+    }
+
+    .haut_titre {
+        grid-area: 3 / 2 / 4 / 4; /* row start/ column start / row end / column end */
+        font-size: xx-large;
+        color: white;
+    }
+
+    .haut_sous-titre {
+        grid-area: 3 / 2 / 4 / 3;
+        font-size: smaller;
+        margin-top: 130px;
+    }
+
+    .milieu_titre {
+        grid-area: 7 / 2 / 7 / 5; /* row start/ column start / row end / column end */
+        margin-top: 10%;
+        font-size: x-large;
+        color: white;
+    }
+
+    .milieu_sous-titre {
+        margin-top: 60%;
+        grid-area: 6 / 2 / 8 / 5;
+        font-size: large;
+        color: white;
+        text-align: justify;
+    }
+
+    .tab {
+        display: none; /* Le tableau n'est pas pratique d'utilisation ! */
+    }
+
+    .footer-text {
+        grid-area: 13 / 2 / 13 / 5;
+        padding-top: 50px;
+        color: white;
+        text-align: center;
+    }
+
+    .footer-haut {
+        grid-area: 13 / 2 / 13 / 5;
+        padding-top: 100px;
+        padding-left: 10px;
+        color: white;
+        text-align: center;
+    }
 
 }
