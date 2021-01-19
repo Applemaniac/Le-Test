@@ -52,7 +52,7 @@ main a {
 
 .haut_titre {
     grid-area: 4 / 2 / 4 / 5; /* row start/ column start / row end / column end */
-    font-size: xxx-large;
+    font-size: xx-large;
     color: white;
 }
 
@@ -124,7 +124,7 @@ th a {
 
     .haut_titre {
         grid-area: 4 / 2 / 4 / 5; /* row start/ column start / row end / column end */
-        font-size: xxx-large;
+        font-size: xx-large;
         color: white;
     }
 
