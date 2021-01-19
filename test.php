@@ -73,7 +73,8 @@ $description = "";
 /* Fin de la création des variables */
 
 if (!isset($_POST['nbQuestion'])){ /* Première question */
-    if ($_SESSION['nbQuestion'] == 0){
+    /* Pour éviter d'afficher une erreur si l'utilisateur n'a pas encore utilisé le questionnaire */
+    if ($_SESSION['nbQuestion'] == 0 || (($_SESSION['nbQuestion'] == 1) && $_SESSION['reponses'] == '')){
         $cas = 0; /* On affiche les questions */
         $question = $questions[0];
         $rep1 = $reponses[0][0];
@@ -83,7 +84,7 @@ if (!isset($_POST['nbQuestion'])){ /* Première question */
         $nbQuestion = 1;
         $_SESSION['nbQuestion'] = 1;
     }
-} elseif (intval($_POST['nbQuestion']) < 4){
+} elseif (intval($_POST['nbQuestion']) < count($questions)){ /* Tant que l'on arrive pas à la dernière question */
     if ($_SESSION['nbQuestion'] == $_POST['nbQuestion']){
         $cas = 0; /* On affiche les questions */
         $_SESSION['reponses'] = $_SESSION['reponses'] . "" . $_POST['reponse'];
@@ -96,7 +97,7 @@ if (!isset($_POST['nbQuestion'])){ /* Première question */
         $nbQuestion = intval($_POST['nbQuestion']) + 1;
         $_SESSION['nbQuestion'] = intval($_SESSION['nbQuestion']) + 1;
     }
-}else {
+}else { /* On affiche les résultats */
     if ($_SESSION['nbQuestion'] == $_POST['nbQuestion']){
         $cas = 1; /* On affiche le résultat */
         $_SESSION['reponses'] = $_SESSION['reponses'] . "" . $_POST['reponse'];
