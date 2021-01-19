@@ -26,22 +26,22 @@ $reponses = array( /* Les reponses des 4 questions avec leurs valeurs */
 );
 
 $analyse = array(/* TOUTES les analyses de tous les profils :cry: */
-    array('ISFJ', 'de protecteur ', '14,10', 'https://fr.wikipedia.org/wiki/ISFJ'),
-    array('ESFJ', 'de bon vivant', '12,50', 'https://fr.wikipedia.org/wiki/ESFJ'),
-    array('ISTJ', 'd\'administrateur', '11,60', 'https://fr.wikipedia.org/wiki/ISTJ'),
-    array('ISFP', 'd\'artiste ', '8,80', 'https://fr.wikipedia.org/wiki/ISFP'),
-    array('ESTJ', 'de manager ', '8,70', 'https://fr.wikipedia.org/wiki/ESTJ'),
-    array('ESFP', 'd\'acteur', '8,50', 'https://fr.wikipedia.org/wiki/ESFP'),
-    array('ENFP', 'de psychologue ', '8,10', 'https://fr.wikipedia.org/wiki/ENFP'),
-    array('ISTP', 'd\'artisan ', '5,40', 'https://fr.wikipedia.org/wiki/ISTP_(type_de_personnalit%C3%A9)'),
-    array('ESTP', 'de promoteur ', '4,30', 'https://fr.wikipedia.org/wiki/ESTP'),
-    array('INFP', 'd\'idéaliste  ', '3,60', 'https://fr.wikipedia.org/wiki/INFP'),
-    array('INTP', 'de chercheur ', '3,30', 'https://fr.wikipedia.org/wiki/INTP'),
-    array('ENTP', 'd\'inventeur', '3,20', 'https://fr.wikipedia.org/wiki/ENTP'),
-    array('ENFJ', 'd\'animateur', '2,50', 'https://fr.wikipedia.org/wiki/ENFJ'),
-    array('INTJ', 'd\'organisateur', '2,10', 'https://fr.wikipedia.org/wiki/INTJ'),
-    array('ENTJ', 'l\'entrepreneur', '1,80', 'https://fr.wikipedia.org/wiki/ENTJ'),
-    array('INFJ', 'de conseiller', '1,50', 'https://fr.wikipedia.org/wiki/INFG'));
+    /* Description pas faite */array('ISFJ', 'de protecteur ', '14,10', 'https://fr.wikipedia.org/wiki/ISFJ', 'Le type de personnalité des protecteurs est tout à fait unique, car beaucoup de leurs qualités défient toute définition de leurs traits individuels. Bien que compréhensifs, les protecteurs peuvent être farouches lorsqu’ils doivent protéger leur famille ou leurs amis. Bien que calmes et réservés, ils ont un sens solide du contact humain et des relations humaines approfondies. Bien qu’ils recherchent la stabilité et la sécurité, ils sont souvent réceptifs au changement et aux nouvelles idées. Comme tant de choses, les gens qui ont le type de personnalité « protecteur » sont plus que la somme de leurs parties et c’est la manière dont ils utilisent ces points forts qui définit qui ils sont.'),
+    /* Description pas faite */array('ESFJ', 'de bon vivant', '12,50', 'https://fr.wikipedia.org/wiki/ESFJ', 'Les gens qui partagent le type de personnalité « bon vivant» sont, faute d’un meilleur terme, populaires, ce qui est logique, vu que c’est aussi un type de personnalité très répandu qui représente douze pourcent de la population. Au lycée, les bon vivants sont les majorettes et les quarterbacks, ceux qui donnent le ton, captent la lumière des projecteurs et mènent leur équipe vers la victoire et la célébrité. Plus tard dans leur vie, les bon vivants aiment encore soutenir leurs amis et ceux qu’ils aiment, organiser des rencontres sociales et faire de leur mieux pour s’assurer que tout le monde est heureux.'),
+    /* Description pas faite */array('ISTJ', 'd\'administrateur', '11,60', 'https://fr.wikipedia.org/wiki/ISTJ', ''),
+    /* Description pas faite */array('ISFP', 'd\'artiste ', '8,80', 'https://fr.wikipedia.org/wiki/ISFP', ''),
+    /* Description pas faite */array('ESTJ', 'de manager ', '8,70', 'https://fr.wikipedia.org/wiki/ESTJ', ''),
+    /* Description pas faite */array('ESFP', 'd\'acteur', '8,50', 'https://fr.wikipedia.org/wiki/ESFP', ''),
+    /* Description pas faite */array('ENFP', 'de psychologue ', '8,10', 'https://fr.wikipedia.org/wiki/ENFP', ''),
+    /* Description pas faite */array('ISTP', 'd\'artisan ', '5,40', 'https://fr.wikipedia.org/wiki/ISTP_(type_de_personnalit%C3%A9)', ''),
+    /* Description pas faite */array('ESTP', 'de promoteur ', '4,30', 'https://fr.wikipedia.org/wiki/ESTP', ''),
+    /* Description pas faite */array('INFP', 'd\'idéaliste  ', '3,60', 'https://fr.wikipedia.org/wiki/INFP', ''),
+    array('INTP', 'de chercheur ', '3,30', 'https://fr.wikipedia.org/wiki/INTP', 'Vous aimez aider les autres mais n’aimez pas être sous les projecteurs, vous êtes pudique, curieux, sans cesse entrain d’explorer de nouveaux sujets ! Vous êtes franc avec vos proches, et même si vous vous mettez en retrait en groupe, vous observez beaucoup ce qui vous entoure. Le profil INTP doit absolument se nourrir du monde extérieur pour lui permettre d’avoir de nouveaux projets et de nourrir son besoin de réflexion.'),
+    array('ENTP', 'd\'inventeur', '3,20', 'https://fr.wikipedia.org/wiki/ENTP', 'Vous vous intéressez à des sujets très variés, il est donc difficile de vous mettre dans une case, vous aimez vous engager dans plusieurs causes/sujets/objectifs à la fois mais vous ne finissez pas toujours vos projets. Vous avez tendance à vous éparpiller et à être facilement distrait. A la fois rationnel et fantaisiste, vous avez de l’imagination analytique, ce qui aboutit à des idées originales mais il est difficile de le mettre en œuvre. Vous aimez débattre pour la richesse des argumentes et vous vous rangez souvent du côté de l’avocat du diable pour enrichir votre esprit innovateur. Vous allez donner des conseils aux autres meme si on ne vous a rien demandé. Vous détestez le searches répétitives, désordonné, le profil ENTP a besoin d’ancrage dans le monde physique, il a besoin pour cela de rester dans l’action et se discipliner.'),
+    /* Description pas faite */array('ENFJ', 'd\'animateur', '2,50', 'https://fr.wikipedia.org/wiki/ENFJ', ''),
+    array('INTJ', 'd\'organisateur', '2,10', 'https://fr.wikipedia.org/wiki/INTJ', 'Vous êtes stratégique, penseur et efficace, il faut aller à l’essentiel ! Vous, êtes plutôt introverti et  agissez de manière inconsciente, grâce à une idée de génie ! Votre grande capacité de mémorisation est un atout, vous voulez améliorer, perfectionner, trouver des solutions, inutile de perdre son temps pour des futilités. Vous êtes souvent persuadés que vous avez raison, mais attention à ne pas passer à côté d’autres idées. Vous n’allez pas forcément vers les autres, mais vous pouvez être naïf et sensible, il faut trouver un juste équilibre afin de ne pas perdre pied. L’INTJ ne se laisse pas approché facilement mais une fois cette étape franchie, vous aurez une place importante à ses yeux. '),
+    array('ENTJ', 'l\'entrepreneur', '1,80', 'https://fr.wikipedia.org/wiki/ENTJ', 'Vous savez vous montrez très persuasif, autoritaire, vous aimez diriger, vous pensez pour agir ! Charismatique, vous aimez vous surpasser et vous êtes un grand bosseur ! Votre impatience peut vous empêcher d’avoir des idées innovantes et votre intuition introvertie peut être mise à rude épreuve. Il est important de prendre soin de vous, vous devez accorder davantage d’importance à vos valeurs et vos sentiments, il ne faut pas les négliger !'),
+    /* Description pas faite */array('INFJ', 'de conseiller', '1,50', 'https://fr.wikipedia.org/wiki/INFG', ''));
 
 /* Debug */
 
@@ -171,9 +171,10 @@ if (!isset($_POST['nbQuestion'])){ /* Première question */
                     case 1: /* On affiche les résultats */?>
 
                 <div class="resultat">
-                    <p>Vous avez un profil "<?php echo $nom; ?>" ("<?php echo $profil; ?>"), comme <?php echo $pourcentage; ?>% de la population</p>
+                    <p class="titre">Vous avez un profil "<?php echo $nom; ?>" ("<?php echo $profil; ?>"), comme <?php echo $pourcentage; ?>% de la population</p>
                     <br>
-                    <a target=\"_blank\" href="<?php echo $lien; ?>" class='myButton vert'>En savoir plus</a>";
+                    <br>
+                    <a target=\"_blank\" href="<?php echo $lien; ?>" class='myButton vert'>En savoir plus</a>
                 </div>
 
                 <?php
