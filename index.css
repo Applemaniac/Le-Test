@@ -196,6 +196,7 @@ th a {
 
     .milieu_titre {
         grid-area: 6 / 2 / 6 / 5; /* row start/ column start / row end / column end */
+        margin-top: 10%;
         font-size: small;
         color: white;
     }
