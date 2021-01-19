@@ -10,6 +10,7 @@
         <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
         <link rel="icon" type="image/ico" href="img/favicon.ico" />
         <script src="https://kit.fontawesome.com/4beb9db8c0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body class="background">
         <div id="haut">
@@ -39,13 +40,13 @@
                     <br>
                     <a href="test.php"><i class="fas fa-clipboard-list"></i> <em>Faire le test !</em></a>
                     </p>
-                    <p>
+                    <p class="tab">
                     <br>
                         A titre indicatif, voici la répartition des profils dans la population :
                     </p>
                 </div>
 
-                <table class="profils">
+                <table class="profils tab">
 
                     <tr>
                         <th><a href="https://fr.wikipedia.org/wiki/ISFJ">ISFJ</a></th>
