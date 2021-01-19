@@ -43,15 +43,6 @@ $analyse = array(/* TOUTES les analyses de tous les profils :cry: */
     array('ENTJ', 'l\'entrepreneur', '1,80', 'https://fr.wikipedia.org/wiki/ENTJ', 'Vous savez vous montrez très persuasif, autoritaire, vous aimez diriger, vous pensez pour agir ! Charismatique, vous aimez vous surpasser et vous êtes un grand bosseur ! Votre impatience peut vous empêcher d’avoir des idées innovantes et votre intuition introvertie peut être mise à rude épreuve. Il est important de prendre soin de vous, vous devez accorder davantage d’importance à vos valeurs et vos sentiments, il ne faut pas les négliger !'),
     /* Description pas faite */array('INFJ', 'de conseiller', '1,50', 'https://fr.wikipedia.org/wiki/INFG', ''));
 
-/* Debug */
-
-print_r("Session : ");
-print_r($_SESSION);
-print_r("Post :");
-print_r($_POST);
-
-/* Fin du debug */
-
 
 /* Création des variables qui seront en paramètre des forms */
 
@@ -171,7 +162,7 @@ if (!isset($_POST['nbQuestion'])){ /* Première question */
                     case 1: /* On affiche les résultats */?>
 
                 <div class="resultat">
-                    <p class="titre">Vous avez un profil "<?php echo $nom; ?>" ("<?php echo $profil; ?>"), comme <?php echo $pourcentage; ?>% de la population</p>
+                    <p class="titre">Vous avez un profil "<?php echo $nom; ?>" (<?php echo $profil; ?>), comme <?php echo $pourcentage; ?>% de la population</p>
                     <br>
                     <br>
                     <a target=\"_blank\" href="<?php echo $lien; ?>" class='myButton vert'>En savoir plus</a>
