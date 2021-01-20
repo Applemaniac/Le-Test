@@ -219,6 +219,7 @@ a.footer {
     p.footer {
         color: white;
         text-align: center;
+        font-size: smaller;
     }
 
     a.footer {
