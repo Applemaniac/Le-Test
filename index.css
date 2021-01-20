@@ -31,6 +31,10 @@ nav a {
     padding-left: 5%; /* padding : Top, right, bottom, left */
 }
 
+a.nav-barre-ele1 { /* Forcer le logo a être centré */
+    text-align: center;
+}
+
 a:hover{
     color: gray;
 }

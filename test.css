@@ -20,10 +20,10 @@ body {
 .nav-barre {
     position: absolute;
     display: flex;
+    width: 100%;
     top: 0;
     background-color: #312827;
     height: 7%;
-    width: 100%;
 }
 
 nav a {
@@ -35,6 +35,14 @@ nav a {
 
 a:hover{
     color: gray;
+}
+
+a.nav-barre-ele1 { /* Forcer le logo a être centré */
+    text-align: center;
+}
+
+em {
+    font-style: italic;
 }
 
 em:hover {
