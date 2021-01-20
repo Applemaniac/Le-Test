@@ -155,14 +155,15 @@ a.footer {
         width: 230px;
         font-size: large;
         font-weight: 100;
-        padding: 10px;
+        padding: 30px;
         text-decoration: none;
         cursor: pointer;
         text-align: center;
     }
 
     input.myButton.rouge, input.myButton.vert {
-        font-size: xx-small;
+        font-size: x-small;
+        font-weight: bold;
     }
 
     .question {
