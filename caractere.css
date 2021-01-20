@@ -1,0 +1,53 @@
+.background {
+    background: url("/img/test.png");
+    background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 160px);
+    grid-template-rows: repeat(5, 160px);
+    gap: 0 0;
+}
+
+body {
+    margin: 0;
+    /*overflow-y: hidden;*/
+    background-color: #EECFA1;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-barre {
+    position: absolute;
+    display: flex;
+    top: 0;
+    background-color: #312827;
+    height: 7%;
+    width: 100%;
+}
+
+nav a {
+    align-self: center;
+    text-decoration: none;
+    color: white;
+    padding-left: 5%; /* padding : Top, right, bottom, left */
+}
+
+a:hover{
+    color: gray;
+}
+
+em:hover {
+    text-decoration: underline;
+}
+
+p.footer {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+a.footer {
+    color: white;
+    text-decoration: none;
+}
