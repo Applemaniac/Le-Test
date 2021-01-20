@@ -72,18 +72,9 @@
                         <th>3,30%</th><th>3,20%</th><th>2,50%</th><th>2,10%</th><th>1,80%</th><th>1,50%</th>
                     </tr>
                 </table>
-                <div class="footer-text">
-                    <p>
-                        &copy Site réalisé par Cyril Cuvelier
-                        & Simon Losson pour l'<a href="https://www.isen-lille.fr/"><em>ISEN</em></a> Lille
-                    </p>
-                </div>
-                <div class="footer-haut">
-                    <p id="centre">
-                        <a href="#haut"><i class="fas fa-arrow-up"></i></a>
-                    </p>
-                </div>
+
             </main>
+            <?php include('includes/footer.html'); ?>
         </div>
     </body>
 </html>
