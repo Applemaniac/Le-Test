@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body class="background">
-        <div id="haut">
+        <div>
             <?php include('./includes/navbar.html'); ?>
             <main class="grid-container">
                 <div class="haut_titre">

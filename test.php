@@ -193,6 +193,7 @@ if (!isset($_POST['nbQuestion'])){ /* Première question */
                 }
                 ?>
             </main>
+            <?php include("includes/footer.html"); ?>
         </div>
     </body>
 </html>

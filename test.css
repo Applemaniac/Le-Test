@@ -6,7 +6,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(10, 160px);
-    grid-template-rows: repeat(9, 160px);
+    grid-template-rows: repeat(5, 160px);
     gap: 0 0;
 }
 
@@ -125,3 +125,17 @@ form {
     background-color: #fc7b4b;
     border: solid #ff5d20 1px;
 }
+
+/* Footer */
+
+p.footer {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+a.footer {
+    color: white;
+    text-decoration: none;
+}
+
