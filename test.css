@@ -107,8 +107,8 @@ form {
 }
 
 .rouge {
-    background-color: #ffcfa9;
-    border: solid #fac9a2 1px;
+    background-color: #f5974f;
+    border: solid #fc8c35 1px;
 }
 
 .vert {
@@ -117,8 +117,8 @@ form {
 }
 
 .rouge:hover {
-    background-color: #ef8a39;
-    border: solid #f87b18 1px;
+    background-color: #ee7e24;
+    border: solid #ef7310 1px;
 }
 
 .vert:hover {
