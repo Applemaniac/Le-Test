@@ -56,9 +56,10 @@
 
                 <p class="conclusion">
                     Maintenant parmi cette liste, choisissez entre 3 et 5 traits de caractère qui selon vous vous correspondent le mieux, qu’ils soient positifs ou négatifs.
-                    Cela vous aidera à savoir qui vous êtes vraiment à travers vos qualités et vos défauts. Tenter de remettre en
-                    question sur certains points et de peut-être changer certaines choses. Il n’est pas impossible de changer ou de s’améliorer.
+                    Cela vous aidera à savoir qui vous êtes vraiment à travers vos qualités et vos défauts. Tentez de remettre en
+                    question certains points et d'envisager certaines choses. Il n’est pas impossible de changer ou de s’améliorer bien que cela puisse sembler compliqué.
                     De 15 à 25 ans, la personnalité se forge et se forme en fonction des événements, des rencontres et des choix que l'on fait.
+                    Croyez en vous et en vos capacités.
                 </p>
 
             </main>
