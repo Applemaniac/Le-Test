@@ -16,7 +16,7 @@
         <div>
             <?php include('./includes/navbar.html'); ?>
             <main class="grid-container">
-                <h1 class="titre">Cerner vos traits de caractère</h1>
+                <h1 class="titre">Cernez vos traits de caractère</h1>
                 <p class="sous-titre">
                     Dans la liste d’adjectifs ci-dessous, choisissez celui des deux qui vous correspond
                     le mieux. Tentez d'être le plus honnête possible, sans jugement. L'objectif est ici de mieux vous
@@ -24,7 +24,7 @@
                 </p>
 
                 <ul class="liste">
-                    <li>Expansif (tourné vers les autres) ou Introverti (secret, plus renfermé) ?</li>
+                    <li>Extraverti ou Introverti ?</li>
                     <li>Consciencieux ou Étourdi ?</li>
                     <li>Idéaliste ou Réaliste ?</li>
                     <li>Rebelle ou Docile ?</li>
