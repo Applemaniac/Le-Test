@@ -232,3 +232,6 @@ a.footer {
     }
 
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1024px) {/* Taille pour les écrans 125% */
+}

@@ -15,6 +15,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+p {
+    color: white;
+}
+
 em {
     font-style: italic;
 }
