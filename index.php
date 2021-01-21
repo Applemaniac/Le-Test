@@ -16,11 +16,11 @@
         <div>
             <?php include('./includes/navbar.html'); ?>
             <main class="grid-container">
-                <div class="haut_titre">
+                <div class="haut_titre element">
                     <p>QUI ÊTES VOUS VRAIMENT ?</p>
                 </div>
 
-                <div class="haut_sous-titre">
+                <div class="haut_sous-titre element">
                     <a href="#text"><em>FAITES LE TEST !</em></a>
                 </div>
 
