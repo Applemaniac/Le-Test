@@ -310,3 +310,88 @@ p.article-6-texte {
         margin-top: 0;
     }
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1300px) {/* Taille pour les écrans 125% */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(7, 160px);
+        grid-template-rows: repeat(16, 160px);
+        gap: 0 0;
+    }
+
+    h1.titre {
+        grid-area: 1 / 2 / 3 / 7; /* row start/ column start / row end / column end */
+        font-size: xx-large;
+        margin-top: 70px;
+    }
+
+    h3.date {
+        grid-area: 1 / 2 / 3 / 7; /* row start/ column start / row end / column end */
+        margin-top: 120px;
+        font-size: large;
+    }
+
+    p.intro {
+        grid-area: 2 / 2 / 4 / 7; /* row start/ column start / row end / column end */
+    }
+
+    h1.article-1-titre {
+        grid-area: 4 / 2 / 4 / 7; /* row start/ column start / row end / column end */
+    }
+
+    p.article-1-texte {
+        grid-area: 4 / 2 / 4 / 7; /* row start/ column start / row end / column end */
+        margin-top: 100px;
+    }
+
+    h1.article-2-titre {
+        grid-area: 6 / 2 / 7 / 7; /* row start/ column start / row end / column end */
+        margin-top: 0;
+    }
+
+    p.article-2-texte {
+        grid-area: 6 / 2 / 7 / 7; /* row start/ column start / row end / column end */
+        margin-top: 80px;
+    }
+
+    h1.article-3-titre {
+        grid-area: 7 / 2 / 8 / 7; /* row start/ column start / row end / column end */
+        margin-top: 60px;
+    }
+
+    p.article-3-texte {
+        grid-area: 8 / 2 / 9 / 7; /* row start/ column start / row end / column end */
+        margin-top: 0;
+    }
+
+    h1.article-4-titre {
+        grid-area: 9 / 2 / 10 / 7; /* row start/ column start / row end / column end */
+        margin-top: 50px;
+    }
+
+    p.article-4-texte {
+        grid-area: 10 / 2 / 11 / 7; /* row start/ column start / row end / column end */
+        margin-top: 10px;
+    }
+
+    h1.article-5-titre {
+        grid-area: 11 / 2 / 11 / 7; /* row start/ column start / row end / column end */
+        margin-top: 0;
+    }
+
+    p.article-5-texte {
+        grid-area: 11 / 2 / 13 / 7; /* row start/ column start / row end / column end */
+        margin-top: 80px;
+    }
+
+    h1.article-6-titre {
+        grid-area: 14 / 2 / 14 / 7; /* row start/ column start / row end / column end */
+        margin-top: 20px;
+
+    }
+
+    p.article-6-texte {
+        grid-area: 15 / 2 / 16 / 7; /* row start/ column start / row end / column end */
+        margin-top: 0;
+    }
+}

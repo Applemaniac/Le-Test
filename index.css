@@ -233,5 +233,55 @@ a.footer {
 
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1024px) {/* Taille pour les écrans 125% */
+@media screen and (min-width: 1025px) and (max-width: 1300px) {/* Taille pour les écrans 125% */
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(6, 160px);
+        grid-template-rows: repeat(12, 160px);
+        gap: 0 0;
+    }
+
+    .haut_titre {
+        grid-area: 3 / 2 / 4 / 4; /* row start/ column start / row end / column end */
+        font-size: xx-large;
+        color: white;
+    }
+
+    .haut_sous-titre {
+        grid-area: 3 / 2 / 4 / 3;
+        font-size: smaller;
+        margin-top: 130px;
+    }
+
+    .milieu_titre {
+        grid-area: 7 / 2 / 7 / 5; /* row start/ column start / row end / column end */
+        margin-top: 10%;
+        font-size: x-large;
+        color: white;
+    }
+
+    .milieu_sous-titre {
+        margin-top: 60%;
+        grid-area: 6 / 2 / 8 / 6;
+        font-size: large;
+        color: white;
+        text-align: justify;
+    }
+
+    .tab {
+        display: none; /* Le tableau n'est pas pratique d'utilisation ! */
+    }
+
+    p.footer {
+        color: white;
+        text-align: center;
+        font-size: smaller;
+    }
+
+    a.footer {
+        color: white;
+        text-decoration: none;
+    }
+
 }
