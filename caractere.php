@@ -19,7 +19,7 @@
                 <h1 class="titre">Cerner vos traits de caractère</h1>
                 <p class="sous-titre">
                     Dans la liste d’adjectifs ci-dessous, choisissez celui des deux qui vous correspond
-                    le mieux. Tentez d'être le plus honnête possible sans jugement. L'objectif est ici de mieux vous
+                    le mieux. Tentez d'être le plus honnête possible, sans jugement. L'objectif est ici de mieux vous
                     connaître.
                 </p>
 
@@ -56,9 +56,9 @@
                 </ul>
 
                 <p class="conclusion">
-                    Maintenant parmi cette liste, choisissez entre 3 et 5 traits de caractère qui selon vous vous correspondent le mieux, qu’ils soient positifs ou négatifs.
+                    Maintenant, parmi cette liste, choisissez entre 3 et 5 traits de caractère qui selon vous vous correspondent le mieux, qu’ils soient positifs ou négatifs.
                     Cela vous aidera à savoir qui vous êtes vraiment à travers vos qualités et vos défauts. Tentez de remettre en
-                    question certains points et d'envisager certaines choses. Il n’est pas impossible de changer ou de s’améliorer bien que cela puisse sembler compliqué.
+                    question certains points et d'envisager de nouvelles choses. Il n’est pas impossible de changer ou de s’améliorer bien que cela puisse sembler compliqué.
                     De 15 à 25 ans, la personnalité se forge et se forme en fonction des événements, des rencontres et des choix que l'on fait.
                     Croyez en vous et en vos capacités.
                 </p>
