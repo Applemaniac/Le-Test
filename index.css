@@ -237,7 +237,7 @@ a.footer {
 
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(6, 160px);
+        grid-template-columns: repeat(8, 130px);
         grid-template-rows: repeat(12, 160px);
         gap: 0 0;
     }
@@ -263,7 +263,7 @@ a.footer {
 
     .milieu_sous-titre {
         margin-top: 60%;
-        grid-area: 6 / 2 / 8 / 6;
+        grid-area: 6 / 2 / 8 / 8;
         font-size: large;
         color: white;
         text-align: justify;
@@ -284,4 +284,56 @@ a.footer {
         text-decoration: none;
     }
 
+}
+
+@media screen and (min-height: 780px) and (max-height: 1300px) {/* Taille pour les écrans qui ont une grande hauteur */
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(10, 160px);
+        grid-template-rows: repeat(12, 160px);
+        gap: 0 0;
+    }
+
+    /* Gestion de la grille */
+
+    .haut_titre {
+        grid-area: 4 / 2 / 4 / 5; /* row start/ column start / row end / column end */
+        font-size: xx-large;
+        color: white;
+    }
+
+    .haut_sous-titre {
+        grid-area: 4 / 2 / 4 / 5;
+        margin-top: 70px;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .milieu_titre {
+        grid-area: 8 / 2 / 9 / 4;
+        font-size: x-large;
+        color: white;
+    }
+
+    .milieu_sous-titre {
+        margin-top: 10%;
+        grid-area: 8 / 2 / 10 / 9;
+        font-size: large;
+        color: white;
+        text-align: justify;
+    }
+
+    strong {
+        font-weight: bold;
+        color: #FFCFA9;
+    }
+
+    /* tableau */
+    table {
+        grid-area: 10 / 2 / 11 / 9;
+        border-collapse: collapse;
+    }
 }
