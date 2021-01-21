@@ -6,7 +6,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(10, 160px);
-    grid-template-rows: repeat(5, 160px);
+    grid-template-rows: repeat(6, 160px);
     gap: 0 0;
 }
 
@@ -287,7 +287,7 @@ a.footer {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(6, 160px);
-        grid-template-rows: repeat(5, 160px);
+        grid-template-rows: repeat(8, 160px);
         gap: 0 0;
     }
 
