@@ -18,9 +18,8 @@
             <main class="grid-container">
                 <h1 class="titre">Cerner vos traits de caractère</h1>
                 <p class="sous-titre">
-                    Il y a une liste d’adjectifs ci-dessous, vous devez choisir à chaque fois celui qui vous correspond
-                    le mieux ! Vous devez être le plus honnête possible et même si cela ne vous plaît, vous devez suivre
-                    être honnête, ce qui compte ici c’est de voir qui vous êtes vraiment, sans jugement.
+                    Dans la liste d’adjectifs ci-dessous, choisissez celui des deux qui vous correspond
+                    le mieux. Tentez d'être le plus honnête possible sans jugement.
                 </p>
 
                 <ul class="liste">
