@@ -9,5 +9,5 @@ if (!isset($_POST['faille'])){ ?>
      </div>
 <?php }
 else {
-    echo $_POST['faille'];
+    echo "Ma faille : " + $_POST['faille'];
 }
